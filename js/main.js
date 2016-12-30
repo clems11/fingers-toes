@@ -4,9 +4,9 @@ $(document).ready( function () {
 
 // conditions for the result of the loop
     function counting(i) {
-        var destination = $('#result');
+      var destination = $('#result');
 
-    loop = setTimeout(function () {
+    loop = setTimeout(function() {
           destination.html(i);
           // fingers and toes conditions
           ( (i > 0) & (i % 3 === 0) ) ?
@@ -15,7 +15,8 @@ $(document).ready( function () {
                     , 'text-transform': 'uppercase'})
               :
                 $('#fingers').css
-                    ({'color': 'black'});
+                    ({'color': 'black'
+                    , 'text-transform': 'none'});
 
           ( (i > 0) & (i % 5 === 0) ) ?
                 $('#toes').css
@@ -23,10 +24,12 @@ $(document).ready( function () {
                     , 'text-transform': 'uppercase'})
               :
                 $('#toes').css
-                    ({'color': 'black'});
+                    ({'color': 'black'
+                    , 'text-transform': 'none'});
 
             console.log(i);
         }, 1000 * i);
+
     }
 
 
@@ -39,24 +42,37 @@ $(document).ready( function () {
 
     var number;
 
+    var counterNumber;
 
     $('#countMe').on('click', function () {
-    var number = parseFloat( $('#counter').val(), 10 );
+     number = parseFloat( $('#counter').val(), 10 );
 
     count(number);
 
-    return number;
+
+    return countedNumber = number;
 
     });
 
+    function clearText() {
+      $('#fingers').css({'color': '#263238'
+                        , 'text-transform': 'none'});
+      $('#toes').css(   {'color': '#263238'
+                        , 'text-transform': 'none'});
+    }
 
-    $('#resetCounter').bind('click', function(){
-      $('#counter').val('');
+    $('#resetCounter').on('click', function(){
+      clearTimeout(loop);
+      $('#counter').bind().val('');
       $('#result').empty();
+      clearText();
+
     })
 
     $('#restartCounter').bind('click', function () {
 
-  })
+      clearText();
+      count(countedNumber);
+    })
 
 })

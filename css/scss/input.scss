@@ -1,15 +1,19 @@
+html {
+  height: 100%;
+}
+
 body {
   margin: 0;
   padding: 0;
   font-family: helvetica;
   background-color: #FAFAFA;
+  height: 100%;
 }
 
 header {
   background-color: #B71C1C;
   height: 100px;
   width: 100%;
-  padding-top: 1em;
   text-align: center;
   opacity: .8;
   box-shadow: 0 2px 4px 0 rgba(0,0,0,0.24);
@@ -19,7 +23,7 @@ header {
     span {
       font-size: 40px;
       color: #FFF;
-      line-height: 200%;
+      line-height: 250%;
 
       @media screen and (max-width: 400px) {
        font-size: 25px;
@@ -32,7 +36,9 @@ header {
 
 .container {
   width: 90%;
-  margin: 0 auto;
+  margin: 0 auto -20px auto;
+  min-height: calc(100vh - 120px);
+
 
     &__btn--count {
       background-color: #263238;
@@ -117,8 +123,9 @@ header {
       width: 80%;
       text-align: center;
       color: #263238;
-      margin: 2em auto 1em auto;
+      margin:0 auto;
       font-size: 30px;
+      padding: 2em 0 1em;
 
       @media screen and (max-width: 900px) {
         margin: 1em auto;
@@ -126,7 +133,8 @@ header {
     }
 
     &__counter {
-      margin: 2em auto;
+      margin: 0 auto;
+      padding: 2em 0 2em;
       text-align: center;
       height: 150px;
       @media screen and (max-width: 900px) {
@@ -167,11 +175,13 @@ header {
 
 }
 
+
 footer {
   background-color: #323232;
   text-align: right;
   height: 20px;
   padding: 10px;
+
 
   span {
     color: #FFF;
