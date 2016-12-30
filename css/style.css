@@ -93,29 +93,27 @@ header {
     color: #263238;
     margin: 0 auto;
     font-size: 30px;
-    padding: 2em 0 1em; }
-    @media screen and (max-width: 900px) {
-      .container__input-container {
-        margin: 1em auto; } }
+    padding: 1em 0 0; }
   .container__counter {
     margin: 0 auto;
-    padding: 2em 0 2em;
+    padding: 2em 0;
     text-align: center;
     height: 150px; }
     @media screen and (max-width: 900px) {
       .container__counter {
-        height: 90px; } }
+        height: 100px; } }
     @media screen and (max-width: 400px) {
       .container__counter {
-        height: 40px; } }
+        height: 40px;
+        padding: .5em 0; } }
   .container__counter--result {
     font-size: 140px; }
     @media screen and (max-width: 900px) {
       .container__counter--result {
-        font-size: 80px; } }
+        font-size: 100px; } }
     @media screen and (max-width: 400px) {
       .container__counter--result {
-        font-size: 25px; } }
+        font-size: 50px; } }
   .container__two-col {
     width: 49%;
     text-align: center;
@@ -128,6 +126,12 @@ header {
         width: 100%;
         margin: 10px auto;
         font-size: 75px; } }
+    @media screen and (max-width: 400px) {
+      .container__two-col {
+        width: 100%;
+        margin: 5px auto;
+        font-size: 50px;
+        padding: 20px 0; } }
 
 footer {
   background-color: #323232;

@@ -125,23 +125,21 @@ header {
       color: #263238;
       margin:0 auto;
       font-size: 30px;
-      padding: 2em 0 1em;
+      padding: 1em 0 0;
 
-      @media screen and (max-width: 900px) {
-        margin: 1em auto;
-      }
     }
 
     &__counter {
       margin: 0 auto;
-      padding: 2em 0 2em;
+      padding: 2em 0;
       text-align: center;
       height: 150px;
       @media screen and (max-width: 900px) {
-       height: 90px;
+       height: 100px;
       }
       @media screen and (max-width: 400px) {
        height: 40px;
+       padding: .5em 0;
       }
     }
 
@@ -149,10 +147,10 @@ header {
       font-size: 140px;
 
       @media screen and (max-width: 900px) {
-       font-size: 80px;
+       font-size: 100px;
       }
       @media screen and (max-width: 400px) {
-       font-size: 25px;
+       font-size: 50px;
       }
     }
 
@@ -169,6 +167,13 @@ header {
          margin: 10px auto;
          font-size: 75px;
        }
+       @media screen and (max-width: 400px) {
+        width: 100%;
+        margin: 5px auto;
+        font-size: 50px;
+        padding: 20px 0;
+      }
+
 
     }
 

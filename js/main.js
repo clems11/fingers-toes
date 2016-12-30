@@ -10,23 +10,23 @@ $(document).ready( function () {
     // loop = setTimeout(function() {
 
           // fingers and toes conditions
-          // ( (i > 0) & (i % 3 === 0) ) ?
-          //       $('#fingers').css
-          //           ({'color': 'red'
-          //           , 'text-transform': 'uppercase'})
-          //     :
-          //       $('#fingers').css
-          //           ({'color': 'black'
-          //           , 'text-transform': 'none'});
-          //
-          // ( (i > 0) & (i % 5 === 0) ) ?
-          //       $('#toes').css
-          //           ({'color': 'red'
-          //           , 'text-transform': 'uppercase'})
-          //     :
-          //       $('#toes').css
-          //           ({'color': 'black'
-          //           , 'text-transform': 'none'});
+          ( (i > 0) & (i % 3 === 0) ) ?
+                $('#fingers').css
+                    ({'color': 'red'
+                    , 'text-transform': 'uppercase'})
+              :
+                $('#fingers').css
+                    ({'color': 'black'
+                    , 'text-transform': 'none'});
+
+          ( (i > 0) & (i % 5 === 0) ) ?
+                $('#toes').css
+                    ({'color': 'red'
+                    , 'text-transform': 'uppercase'})
+              :
+                $('#toes').css
+                    ({'color': 'black'
+                    , 'text-transform': 'none'});
         //
         //     console.log(i);
         // }, 1000 * i);
@@ -113,14 +113,29 @@ $(document).ready( function () {
                    //  your code here
           console.log(i++);                     //  increment the counter
           if (i <= number) {
+            ( (i > 0) & (i % 3 === 0) ) ?
+                  $('#fingers').css
+                      ({'color': 'red'
+                      , 'text-transform': 'uppercase'})
+                :
+                  $('#fingers').css
+                      ({'color': 'black'
+                      , 'text-transform': 'none'});
+
+            ( (i > 0) & (i % 5 === 0) ) ?
+                  $('#toes').css
+                      ({'color': 'red'
+                      , 'text-transform': 'uppercase'})
+                :
+                  $('#toes').css
+                      ({'color': 'black'
+                      , 'text-transform': 'none'});
             $('#result').html(i);            //  if the counter < 10, call the loop function
              myLoop();             //  ..  again which will trigger another
           }                      //  ..  setTimeout()
        }, 1000);
 
     }
-
-
 
     var countingF = function () {
       number = parseFloat( $('#counter').val(), 10 );
