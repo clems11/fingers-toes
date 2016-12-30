@@ -95,6 +95,9 @@ header {
     margin: 0 auto;
     font-size: 30px;
     padding: 1em 0 0; }
+    @media screen and (max-width: 900px) {
+      .container__input-container {
+        padding: .5em 0 0; } }
   .container__counter {
     margin: 0 auto;
     padding: 2em 0;
@@ -124,9 +127,14 @@ header {
     padding-bottom: 50px; }
     @media screen and (max-width: 900px) {
       .container__two-col {
-        width: 100%;
         margin: 10px auto;
         font-size: 75px; } }
+    @media screen and (max-width: 650px) {
+      .container__two-col {
+        width: 100%;
+        margin: 10px auto;
+        font-size: 60px;
+        padding-bottom: 0px; } }
     @media screen and (max-width: 440px) {
       .container__two-col {
         width: 100%;
@@ -142,3 +150,5 @@ footer {
   footer span {
     color: #FFF;
     font-size: 12px; }
+
+/*# sourceMappingURL=style.css.map */

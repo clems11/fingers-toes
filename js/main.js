@@ -6,6 +6,8 @@ $(document).ready( function () {
 
     var i;
 
+    var number;
+
       var myLoop = function() {
 
         timeOut = setTimeout(function () {
