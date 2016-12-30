@@ -2,6 +2,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: helvetica;
+  background-color: #FAFAFA;
 }
 
 header {
@@ -11,12 +12,21 @@ header {
   padding-top: 1em;
   text-align: center;
   opacity: .8;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.24);
+  -webkit-box-shadow: 0 2px 4px 0 rgba(0,0,0,0.24);
+  -moz-box-shadow: 0 2px 4px 0 rgba(0,0,0,0.24);
 
     span {
       font-size: 40px;
       color: #FFF;
       line-height: 200%;
+
+      @media screen and (max-width: 400px) {
+       font-size: 25px;
+      }
     }
+
+
 }
 
 
@@ -24,29 +34,79 @@ header {
   width: 90%;
   margin: 0 auto;
 
-    &__btn {
-      background-color: #000;
+    &__btn--count {
+      background-color: #263238;
       border: 0;
       border-radius: 4px;
-      height: 25px;
-      color: white;
+      color: #FFF;
+      font-size: 20px;
+      height: 35px;
       width: 100px;
       box-shadow: 0 4px 8px 0 rgba(0,0,0,0.24);
       -webkit-box-shadow: 0 4px 8px 0 rgba(0,0,0,0.24);
       -moz-box-shadow: 0 4px 8px 0 rgba(0,0,0,0.24);
     }
 
-    &__btn:hover {
+    &__btn--count:hover {
       box-shadow: 0 8px 12px 0 rgba(0,0,0,0.24);
       -webkit-box-shadow: 0 8px 12px 0 rgba(0,0,0,0.24);
       -moz-box-shadow: 0 8px 12px 0 rgba(0,0,0,0.24);
     }
 
+    &__btn--reset {
+      background-color: #263238;
+      border: 0;
+      border-radius: 4px;
+      color: #FFF;
+      font-size: 20px;
+      height: 35px;
+      width: 100px;
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.24);
+      -webkit-box-shadow: 0 4px 8px 0 rgba(0,0,0,0.24);
+      -moz-box-shadow: 0 4px 8px 0 rgba(0,0,0,0.24);
+    }
+
+    &__btn--reset:hover {
+      box-shadow: 0 8px 12px 0 rgba(0,0,0,0.24);
+      -webkit-box-shadow: 0 8px 12px 0 rgba(0,0,0,0.24);
+      -moz-box-shadow: 0 8px 12px 0 rgba(0,0,0,0.24);
+    }
+
+    &__btn--restart {
+      background-color: #263238;
+      border: 0;
+      border-radius: 4px;
+      color: #FFF;
+      font-size: 20px;
+      height: 35px;
+      width: 100px;
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.24);
+      -webkit-box-shadow: 0 4px 8px 0 rgba(0,0,0,0.24);
+      -moz-box-shadow: 0 4px 8px 0 rgba(0,0,0,0.24);
+    }
+
+    &__btn--restart:hover {
+      box-shadow: 0 8px 12px 0 rgba(0,0,0,0.24);
+      -webkit-box-shadow: 0 8px 12px 0 rgba(0,0,0,0.24);
+      -moz-box-shadow: 0 8px 12px 0 rgba(0,0,0,0.24);
+    }
+
+
     input {
       margin: 1em;
       height: 25px;
+      color: #263238;
       border-radius: 4px;
       font-size: 16px;
+      border: 1px solid black;
+      box-shadow: 0 1px 2px 0 rgba(0,0,0,0.24);
+      -webkit-box-shadow: 0 1px 2px 0 rgba(0,0,0,0.24);
+      -moz-box-shadow: 0 1px 2px 0 rgba(0,0,0,0.24);
+
+      @media screen and (max-width: 900px) {
+       font-size: 12px;
+      }
+
     }
 
     &__input-label {
@@ -56,32 +116,65 @@ header {
     &__input-container {
       width: 80%;
       text-align: center;
-      margin: 2em auto;
-      font-size: 20px;
+      color: #263238;
+      margin: 2em auto 1em auto;
+      font-size: 30px;
+
+      @media screen and (max-width: 900px) {
+        margin: 1em auto;
+      }
     }
 
     &__counter {
       margin: 2em auto;
       text-align: center;
-      height: 40px;
+      height: 150px;
+      @media screen and (max-width: 900px) {
+       height: 90px;
+      }
+      @media screen and (max-width: 400px) {
+       height: 40px;
+      }
     }
 
     &__counter--result {
-      font-size: 32px;
+      font-size: 140px;
+
+      @media screen and (max-width: 900px) {
+       font-size: 80px;
+      }
+      @media screen and (max-width: 400px) {
+       font-size: 25px;
+      }
     }
 
     &__two-col {
       width: 49%;
       text-align: center;
       display: inline-block;
-      border: 1px solid black;
+      font-size: 100px;
+      color: #263238;
+      padding-bottom: 50px;
 
-        @media screen and (max-width: 500px) {
-         width: 90%;
-         margin: 1em 0;
+        @media screen and (max-width: 900px) {
+         width: 100%;
+         margin: 10px auto;
+         font-size: 75px;
        }
 
     }
 
 
+}
+
+footer {
+  background-color: #323232;
+  text-align: right;
+  height: 20px;
+  padding: 10px;
+
+  span {
+    color: #FFF;
+    font-size: 12px;
+  }
 }

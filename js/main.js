@@ -8,14 +8,20 @@ $(document).ready( function () {
           destination.html(i);
           // fingers and toes conditions
           ( (i > 0) & (i % 3 === 0) ) ?
-                $('#fingers').css({'color': 'red'})
+                $('#fingers').css
+                    ({'color': 'red'
+                    , 'text-transform': 'uppercase'})
               :
-                $('#fingers').css({'color': 'black'});
+                $('#fingers').css
+                    ({'color': 'black'});
 
           ( (i > 0) & (i % 5 === 0) ) ?
-                $('#toes').css({'color': 'red'})
+                $('#toes').css
+                    ({'color': 'red'
+                    , 'text-transform': 'uppercase'})
               :
-                $('#toes').css({'color': 'black'});
+                $('#toes').css
+                    ({'color': 'black'});
 
             console.log(i);
         }, 1000 * i);
@@ -36,8 +42,5 @@ $(document).ready( function () {
     count(number);
 
     });
-
-
-
 
 })
