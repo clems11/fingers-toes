@@ -52,7 +52,6 @@ $(document).ready( function () {
       console.log(timeOut);
       countedNumber = number;
       clearTimeout(timeOut);
-      // i = 0;
       $('#counter').bind().val('');
       $('#result').empty();
       clearText();
@@ -68,7 +67,6 @@ $(document).ready( function () {
 
     $('#restartCounter').on('click', function() {
       console.log(countedNumber);
-      // i = 0;
       count(number);
     })
 
