@@ -14,9 +14,9 @@ header {
   width: 100%;
   text-align: center;
   opacity: .8;
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.24);
   -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.24);
-  -moz-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.24); }
+  -moz-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.24);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.24); }
   header span {
     font-size: 40px;
     color: #FFF;
@@ -37,13 +37,13 @@ header {
     font-size: 20px;
     height: 35px;
     width: 100px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.24);
     -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.24);
-    -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.24); }
+    -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.24);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.24); }
   .container__btn--count:hover {
-    box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.24);
     -webkit-box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.24);
-    -moz-box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.24); }
+    -moz-box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.24);
+    box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.24); }
   .container__btn--reset {
     background-color: #263238;
     border: 0;
@@ -52,13 +52,13 @@ header {
     font-size: 20px;
     height: 35px;
     width: 100px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.24);
     -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.24);
-    -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.24); }
+    -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.24);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.24); }
   .container__btn--reset:hover {
-    box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.24);
     -webkit-box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.24);
-    -moz-box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.24); }
+    -moz-box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.24);
+    box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.24); }
   .container__btn--restart {
     background-color: #263238;
     border: 0;
@@ -68,13 +68,13 @@ header {
     height: 35px;
     width: 100px;
     margin: 8px 0 0;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.24);
     -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.24);
-    -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.24); }
+    -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.24);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.24); }
   .container__btn--restart:hover {
-    box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.24);
     -webkit-box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.24);
-    -moz-box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.24); }
+    -moz-box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.24);
+    box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.24); }
   .container input {
     margin: 1em;
     height: 25px;
@@ -82,9 +82,9 @@ header {
     border-radius: 4px;
     font-size: 16px;
     border: 1px solid black;
-    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.24);
-    -webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.24);
-    -moz-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.24); }
+    -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.24);
+    -moz-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.24);
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.24); }
     @media screen and (max-width: 900px) {
       .container input {
         font-size: 12px; } }
