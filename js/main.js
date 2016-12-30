@@ -1,10 +1,12 @@
 $(document).ready( function () {
 
+    var loop;
+
 // conditions for the result of the loop
     function counting(i) {
-        var destination = $('.container__counter--result');
+        var destination = $('#result');
 
-        setTimeout(function () {
+    loop = setTimeout(function () {
           destination.html(i);
           // fingers and toes conditions
           ( (i > 0) & (i % 3 === 0) ) ?
@@ -27,6 +29,7 @@ $(document).ready( function () {
         }, 1000 * i);
     }
 
+
     // start i through the loop
     function count(num) {
         for (var i = 0; i <= num; i++) {
@@ -34,13 +37,26 @@ $(document).ready( function () {
         };
     }
 
+    var number;
+
 
     $('#countMe').on('click', function () {
-
     var number = parseFloat( $('#counter').val(), 10 );
 
     count(number);
 
+    return number;
+
     });
+
+
+    $('#resetCounter').bind('click', function(){
+      $('#counter').val('');
+      $('#result').empty();
+    })
+
+    $('#restartCounter').bind('click', function () {
+
+  })
 
 })
