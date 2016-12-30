@@ -21,7 +21,7 @@ header {
     font-size: 40px;
     color: #FFF;
     line-height: 250%; }
-    @media screen and (max-width: 400px) {
+    @media screen and (max-width: 440px) {
       header span {
         font-size: 25px; } }
 
@@ -67,6 +67,7 @@ header {
     font-size: 20px;
     height: 35px;
     width: 100px;
+    margin: 8px 0 0;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.24);
     -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.24);
     -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.24); }
@@ -102,7 +103,7 @@ header {
     @media screen and (max-width: 900px) {
       .container__counter {
         height: 100px; } }
-    @media screen and (max-width: 400px) {
+    @media screen and (max-width: 440px) {
       .container__counter {
         height: 40px;
         padding: .5em 0; } }
@@ -111,7 +112,7 @@ header {
     @media screen and (max-width: 900px) {
       .container__counter--result {
         font-size: 100px; } }
-    @media screen and (max-width: 400px) {
+    @media screen and (max-width: 440px) {
       .container__counter--result {
         font-size: 50px; } }
   .container__two-col {
@@ -126,7 +127,7 @@ header {
         width: 100%;
         margin: 10px auto;
         font-size: 75px; } }
-    @media screen and (max-width: 400px) {
+    @media screen and (max-width: 440px) {
       .container__two-col {
         width: 100%;
         margin: 5px auto;
