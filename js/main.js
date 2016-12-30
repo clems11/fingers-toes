@@ -51,6 +51,7 @@ $(document).ready( function () {
       console.log(timeOut);
       countedNumber = number;
       clearTimeout(timeOut);
+      i = 0;
       $('#counter').bind().val('');
       $('#result').empty();
       clearText();
