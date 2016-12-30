@@ -5,12 +5,18 @@ body {
 }
 
 header {
-  background-color: #FAFAFA;
+  background-color: #B71C1C;
   height: 100px;
   width: 100%;
-  text-align: center;
-  font-size: 24px;
   padding-top: 1em;
+  text-align: center;
+  opacity: .8;
+
+    span {
+      font-size: 40px;
+      color: #FFF;
+      line-height: 200%;
+    }
 }
 
 
@@ -18,25 +24,64 @@ header {
   width: 90%;
   margin: 0 auto;
 
-  &__input-label {
-    color: red;
-  }
+    &__btn {
+      background-color: #000;
+      border: 0;
+      border-radius: 4px;
+      height: 25px;
+      color: white;
+      width: 100px;
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.24);
+      -webkit-box-shadow: 0 4px 8px 0 rgba(0,0,0,0.24);
+      -moz-box-shadow: 0 4px 8px 0 rgba(0,0,0,0.24);
+    }
 
-  &__input-container {
-    width: 80%;
-    text-align: center;
-    margin: 2em auto;
+    &__btn:hover {
+      box-shadow: 0 8px 12px 0 rgba(0,0,0,0.24);
+      -webkit-box-shadow: 0 8px 12px 0 rgba(0,0,0,0.24);
+      -moz-box-shadow: 0 8px 12px 0 rgba(0,0,0,0.24);
+    }
 
-  }
+    input {
+      margin: 1em;
+      height: 25px;
+      border-radius: 4px;
+      font-size: 16px;
+    }
 
+    &__input-label {
 
+    }
 
-  &__two-col {
-    width: 49%;
-    text-align: center;
-    display: inline-block;
-    border: 1px solid black;
-  }
+    &__input-container {
+      width: 80%;
+      text-align: center;
+      margin: 2em auto;
+      font-size: 20px;
+    }
+
+    &__counter {
+      margin: 2em auto;
+      text-align: center;
+      height: 40px;
+    }
+
+    &__counter--result {
+      font-size: 32px;
+    }
+
+    &__two-col {
+      width: 49%;
+      text-align: center;
+      display: inline-block;
+      border: 1px solid black;
+
+        @media screen and (max-width: 500px) {
+         width: 90%;
+         margin: 1em 0;
+       }
+
+    }
 
 
 }

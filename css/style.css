@@ -4,26 +4,58 @@ body {
   font-family: helvetica; }
 
 header {
-  background-color: #FAFAFA;
+  background-color: #B71C1C;
   height: 100px;
   width: 100%;
+  padding-top: 1em;
   text-align: center;
-  font-size: 24px;
-  padding-top: 1em; }
+  opacity: .8; }
+  header span {
+    font-size: 40px;
+    color: #FFF;
+    line-height: 200%; }
 
 .container {
   width: 90%;
   margin: 0 auto; }
-  .container__input-label {
-    color: red; }
+  .container__btn {
+    background-color: #000;
+    border: 0;
+    border-radius: 4px;
+    height: 25px;
+    color: white;
+    width: 100px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.24);
+    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.24);
+    -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.24); }
+  .container__btn:hover {
+    box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.24);
+    -webkit-box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.24);
+    -moz-box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.24); }
+  .container input {
+    margin: 1em;
+    height: 25px;
+    border-radius: 4px;
+    font-size: 16px; }
   .container__input-container {
     width: 80%;
     text-align: center;
-    margin: 2em auto; }
+    margin: 2em auto;
+    font-size: 20px; }
+  .container__counter {
+    margin: 2em auto;
+    text-align: center;
+    height: 40px; }
+  .container__counter--result {
+    font-size: 32px; }
   .container__two-col {
     width: 49%;
     text-align: center;
     display: inline-block;
     border: 1px solid black; }
+    @media screen and (max-width: 500px) {
+      .container__two-col {
+        width: 90%;
+        margin: 1em 0; } }
 
 /*# sourceMappingURL=style.css.map */

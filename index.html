@@ -10,7 +10,7 @@
 <body>
 
   <header>
-    Fingers and Toes
+    <span class="header__title">Fingers and Toes</span>
   </header>
 
   <div class="container">
@@ -19,14 +19,18 @@
       <input
         class=""
         id="counter"
-        type="text"
+        type="number"
         value=""
       >
+      <button id="countMe" class="container__btn">Count!</button>
     </div>
 
+    <div class="container__counter">
+      <span class="container__counter--result"></span>
+    </div>
 
-    <div class="container__two-col">Fingers</div>
-    <div class="container__two-col">Toes</div>
+    <div id="fingers" class="container__two-col">Fingers</div>
+    <div id="toes" class="container__two-col">Toes</div>
 
   </div>
 
