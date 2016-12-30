@@ -4,7 +4,7 @@ $(document).ready( function () {
 
     var timeOut;
 
-    var i = 0;
+    var i;
 
       var myLoop = function() {
 
@@ -42,6 +42,7 @@ $(document).ready( function () {
     }
 
     function count(number) {
+        i = 0;
         myLoop(number);
     };
 
@@ -51,7 +52,7 @@ $(document).ready( function () {
       console.log(timeOut);
       countedNumber = number;
       clearTimeout(timeOut);
-      i = 0;
+      // i = 0;
       $('#counter').bind().val('');
       $('#result').empty();
       clearText();
@@ -67,7 +68,7 @@ $(document).ready( function () {
 
     $('#restartCounter').on('click', function() {
       console.log(countedNumber);
-      i = 0;
+      // i = 0;
       count(number);
     })
 
