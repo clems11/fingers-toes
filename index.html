@@ -18,18 +18,23 @@
   <div class="container">
     <div class="container__input-container">
       <label class="container__input-label">Input Number Below:</label><br/>
-      <input id="counter" type="number" placeholder=" enter number here">
+      <input id="counter" type="number" placeholder=" enter number here" value="">
 
     <br />
-
-      <button  id="countMe" class="container__btn--count">Count</button>
-        <button  id="resetCounter" class="container__btn--reset">Reset</button>
-          <button id="restartCounter" class="container__btn--restart">Restart</button>
-
+		<div class="container__resize">
+			<button  id="countMe" class="container__btn">Count</button>
+		</div>
+		<div class="container__resize">
+			<button  id="resetCounter" class="container__btn">Reset</button>
+		</div>
+		<div class="container__resize">
+			 <button id="restartCounter" class="container__btn">Restart</button>
+		</div>
+    
         <br />
         <br />
 
-          Current Number: <span id="currentNumber"> -- </span>
+          Last Number Used: <span id="currentNumber"> -- </span>
 
     </div>
 

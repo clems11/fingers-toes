@@ -1,76 +1,81 @@
-$(document).ready( function () {
+$(document).ready(function () {
+	"use strict";
 
-    var countedNumber;
+//////////////////////////////////////////////////	
+////
+////     timeout variable for setTimeout scope	
+	
+	var timeout;
 
-    var timeOut;
+//////////////////////////////////////////////////
+////
+////     counting function	
+	
+	function wrapperCounter(num) {
 
-    var i;
+		clearTimeout(timeout);
 
-    var number;
+		var i = -1;
 
-      var myLoop = function() {
+		function count() {
 
-        timeOut = setTimeout(function () {
-          console.log(i++);
-          if (i <= number) {
-            ( (i > 0) & (i % 3 === 0) ) ?
-                  $('#fingers').css
-                      ({'color': 'red'
-                      , 'text-transform': 'uppercase'})
-                :
-                  $('#fingers').css
-                      ({'color': 'black'
-                      , 'text-transform': 'none'});
+			i++;
 
-            ( (i > 0) & (i % 5 === 0) ) ?
-                  $('#toes').css
-                      ({'color': 'red'
-                      , 'text-transform': 'uppercase'})
-                :
-                  $('#toes').css
-                      ({'color': 'black'
-                      , 'text-transform': 'none'});
-            $('#result').html(i);
-             myLoop();
-          }
-       }, 1000);
+			if (i <= num) {
+				timeout = setTimeout(function () {
+					$('#result').html(i);
+					count();
+				}, 1000);	
+			} 
+		}
+		count();
 
-    }
+	}
+//////////////////////////////////////////////////
+////
+////    collects numbers from "count" and "reset" buttons and places number in the 
+////    "Last number Used" section then sends the number to the counter above
+	
+	function createInputNumber(num) {
+		
+		$('#currentNumber').html(num);
+		wrapperCounter(num);
+	}
+	
+//////////////////////////////////////////////////
+////
+////    "count" button onclick function
 
-    var countingF = function () {
-      number = parseFloat( $('#counter').val(), 10 );
-        count(number);
-        $('#currentNumber').html(number);
-    }
+	$('#countMe').on('click', function () {
+		var inputNum = $('#counter').val();
+		createInputNumber(inputNum);
 
-    function count(number) {
-        i = 0;
-        myLoop(number);
-    };
+	});
 
-    $('#countMe').on('click', countingF);
+//////////////////////////////////////////////////
+////
+////    "reset" button onclick function
+	
+	$('#resetCounter').on('click', function () {
 
-    $('#resetCounter').on('click', function(){
-      console.log(timeOut);
-      countedNumber = number;
-      clearTimeout(timeOut);
-      $('#counter').bind().val('');
-      $('#result').empty();
-      clearText();
-    });
+		clearTimeout(timeout);
+		$('#counter').val('');
+		$('#result').empty();
+		timeout = 0;
 
-    function clearText() {
-      $('#fingers').css({'color': '#263238'
-                        , 'text-transform': 'none'});
-      $('#toes').css(   {'color': '#263238'
-                        , 'text-transform': 'none'});
-    };
+	});
 
+//////////////////////////////////////////////////
+////
+////    "restart" button onclick function
+	
+	$('#restartCounter').on('click', function () {
+		
+		var restartNumber = parseFloat($('#currentNumber').html(), 10);
+		createInputNumber(restartNumber);
+		
 
-    $('#restartCounter').on('click', function() {
-      console.log(countedNumber);
-      count(number);
-    })
+	});
 
 
-})
+});

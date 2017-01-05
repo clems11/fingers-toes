@@ -1,4 +1,6 @@
-////// mixins
+///////////////////////////////////////
+////    mixins                     ////
+///////////////////////////////////////
 
 @mixin box-shadow ($depth) {
   -webkit-box-shadow: $depth;
@@ -6,7 +8,9 @@
           box-shadow: $depth;
 }
 
-////// variables
+///////////////////////////////////////
+////    variables                  ////
+///////////////////////////////////////
 
 $shadow1: 0 2px 4px 0 rgba(0,0,0,0.24);
 $shadow2: 0 4px 8px 0 rgba(0,0,0,0.24);
@@ -14,7 +18,9 @@ $shadow3: 0 8px 12px 0 rgba(0,0,0,0.24);
 
 $dark-gray: #263238;
 
-////////////////////////////////////////
+///////////////////////////////////////
+////    resets and class styles    ////
+///////////////////////////////////////
 
 html {
   height: 100%;
@@ -52,54 +58,25 @@ header {
   width: 90%;
   margin: 0 auto -20px auto;
   min-height: calc(100vh - 120px);
+	
+	&__resize{
+		display: inline-block;
+		@media screen and (max-width: 450px) {
+       	display: block;
+      }
+	}
 
-
-    &__btn--count {
-      background-color: $dark-gray;
-      border: 0;
-      border-radius: 4px;
-      color: #FFF;
-      font-size: 20px;
-      height: 35px;
-      width: 100px;
-      @include box-shadow($shadow2);
-    }
-
-    &__btn--count:hover {
-      @include box-shadow($shadow3);
-    }
-
-    &__btn--reset {
-      background-color: $dark-gray;
-      border: 0;
-      border-radius: 4px;
-      color: #FFF;
-      font-size: 20px;
-      height: 35px;
-      width: 100px;
-      @include box-shadow($shadow2);
-    }
-
-    &__btn--reset:hover {
-      @include box-shadow($shadow3);
-    }
-
-    &__btn--restart {
-      background-color: $dark-gray;
-      border: 0;
-      border-radius: 4px;
-      color: #FFF;
-      font-size: 20px;
-      height: 35px;
-      width: 100px;
-      margin: 8px 0 0;
-      @include box-shadow($shadow2);
-    }
-
-    &__btn--restart:hover {
-      @include box-shadow($shadow3);
-    }
-
+	&__btn{
+		background-color: $dark-gray;
+		border: 0;
+		border-radius: 4px;
+		color: #FFF;
+		font-size: 20px;
+		height: 35px;
+		width: 100px;
+		@include box-shadow($shadow2);
+		
+	}
 
     input {
       margin: 1em;
