@@ -3,7 +3,7 @@ $(document).ready(function () {
 
 	//////////////////////////////////////////////////	
 	////
-	////     timeout variable for setTimeout scope	
+	////     timeout variable for setTimeout 	
 
 	var timeout;
 
